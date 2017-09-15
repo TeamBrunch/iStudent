@@ -104,4 +104,6 @@ fastlane/test_output
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
 
+# Firebase
+GoogleService-Info.plist
 # End of https://www.gitignore.io/api/macos,swift,xcode

@@ -16,6 +16,7 @@
 		637FA3CF1F6C6DF100FDA6B4 /* iStudentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637FA3CE1F6C6DF100FDA6B4 /* iStudentTests.swift */; };
 		637FA3DA1F6C6DF100FDA6B4 /* iStudentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637FA3D91F6C6DF100FDA6B4 /* iStudentUITests.swift */; };
 		637FA3EA1F6C707700FDA6B4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 637FA3E91F6C707700FDA6B4 /* .gitignore */; };
+		637FA3EC1F6C744B00FDA6B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 637FA3EB1F6C744B00FDA6B4 /* GoogleService-Info.plist */; };
 		B98FAC42356BB1AC3959C8EC /* Pods_iStudentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C8B2BC2B9B5ADB6745AF8D /* Pods_iStudentUITests.framework */; };
 		E21922FE05F95352B762AA19 /* Pods_iStudentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFB67900820A06E05E7AC9E /* Pods_iStudentTests.framework */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 		637FA3D91F6C6DF100FDA6B4 /* iStudentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iStudentUITests.swift; sourceTree = "<group>"; };
 		637FA3DB1F6C6DF100FDA6B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		637FA3E91F6C707700FDA6B4 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		637FA3EB1F6C744B00FDA6B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8E51CDDDB31FBD93D2F6756C /* Pods-iStudent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iStudent/Pods-iStudent.debug.xcconfig"; sourceTree = "<group>"; };
 		9D74E6A2F7FA633AB41A504E /* Pods_iStudent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iStudent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEFB67900820A06E05E7AC9E /* Pods_iStudentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iStudentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +132,7 @@
 		637FA3B81F6C6DF100FDA6B4 /* iStudent */ = {
 			isa = PBXGroup;
 			children = (
+				637FA3EB1F6C744B00FDA6B4 /* GoogleService-Info.plist */,
 				637FA3B91F6C6DF100FDA6B4 /* AppDelegate.swift */,
 				637FA3BB1F6C6DF100FDA6B4 /* ViewController.swift */,
 				637FA3BD1F6C6DF100FDA6B4 /* Main.storyboard */,
@@ -286,6 +289,7 @@
 			files = (
 				637FA3EA1F6C707700FDA6B4 /* .gitignore in Resources */,
 				637FA3C41F6C6DF100FDA6B4 /* LaunchScreen.storyboard in Resources */,
+				637FA3EC1F6C744B00FDA6B4 /* GoogleService-Info.plist in Resources */,
 				637FA3C11F6C6DF100FDA6B4 /* Assets.xcassets in Resources */,
 				637FA3BF1F6C6DF100FDA6B4 /* Main.storyboard in Resources */,
 			);
@@ -722,6 +726,7 @@
 				637FA3E01F6C6DF100FDA6B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		637FA3E11F6C6DF100FDA6B4 /* Build configuration list for PBXNativeTarget "iStudentTests" */ = {
 			isa = XCConfigurationList;
@@ -730,6 +735,7 @@
 				637FA3E31F6C6DF100FDA6B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		637FA3E41F6C6DF100FDA6B4 /* Build configuration list for PBXNativeTarget "iStudentUITests" */ = {
 			isa = XCConfigurationList;
@@ -738,6 +744,7 @@
 				637FA3E61F6C6DF100FDA6B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
