@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var userField: UITextField!
     @IBOutlet weak var passField: UITextField!
     
+    @IBOutlet weak var statusMessage: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -39,12 +41,20 @@ class ViewController: UIViewController {
     }
 
     @IBAction func signInBtn(_ sender: UIButton) {
-        let email = userField.text;
-        let password = passField.text;
-        /*Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
-            // ...
-        }*/
-
+    
+        if let email = self.userField.text, let password = self.passField.text {
+            Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
+                // ...
+                if let error = error {
+                    self.statusMessage.text = error.localizedDescription
+                    return
+                }
+                self.statusMessage.text = "nice you signed in"
+            }
+        } else {
+            self.statusMessage.text = "incorrect credentials maybe"
+        }
+        
     }
     
 }
