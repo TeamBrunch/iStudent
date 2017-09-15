@@ -181,6 +181,7 @@
 				637FA3B41F6C6DF100FDA6B4 /* Resources */,
 				8AFC789957005A8211FF4D0D /* [CP] Embed Pods Frameworks */,
 				88415C85DBF9F08168060DE3 /* [CP] Copy Pods Resources */,
+				0AB26B8A1F6C7E4900EE9C02 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -308,6 +309,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0AB26B8A1F6C7E4900EE9C02 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\" \"${SRCROOT}/\" --enable blankLinesAtEndOfScope,blankLinesBetweenScopes,braces,consecutiveBlankLines,consecutiveSpaces,hoistPatternLet,indent,linebreakAtEndOfFile,linebreaks,numberFormatting,ranges,redundantBackticks,redundantGet,redundantLet,redundantNilInit,redundantParens,redundantPattern,redundantRawValues,redundantReturn,redundantSelf,redundantVoidReturnType,redundantInit,semicolons,spaceAroundBraces,spaceAroundBrackets,spaceAroundComments,spaceAroundGenerics,spaceAroundOperators,spaceAroundParens,spaceInsideBraces,spaceInsideBrackets,spaceInsideComments,spaceInsideGenerics,spaceInsideParens,specifiers,trailingClosures,trailingCommas,trailingSpace,todos,unusedArguments,void,wrapArguments --disable elseOnSameLine,fileHeader --allman true --binarygrouping 4,8 --commas always --comments indent --decimalgrouping 3,6 --empty void --experimental disabled --exponentcase uppercase --hexgrouping 4,8 --hexliteralcase uppercase --ifdef indent --indent 4 --insertlines enabled --linebreaks lf --octalgrouping 4,8 --patternlet hoist --ranges spaced --removelines enabled --semicolons inline --self remove --stripunusedargs always --trimwhitespace always --wraparguments afterfirst --wrapelements beforefirst";
+		};
 		2514CCCFCF72A187D1C7301F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -722,6 +736,7 @@
 				637FA3E01F6C6DF100FDA6B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		637FA3E11F6C6DF100FDA6B4 /* Build configuration list for PBXNativeTarget "iStudentTests" */ = {
 			isa = XCConfigurationList;
@@ -730,6 +745,7 @@
 				637FA3E31F6C6DF100FDA6B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		637FA3E41F6C6DF100FDA6B4 /* Build configuration list for PBXNativeTarget "iStudentUITests" */ = {
 			isa = XCConfigurationList;
@@ -738,6 +754,7 @@
 				637FA3E61F6C6DF100FDA6B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
