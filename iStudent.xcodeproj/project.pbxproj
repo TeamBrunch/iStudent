@@ -132,6 +132,9 @@
 		637FA3B81F6C6DF100FDA6B4 /* iStudent */ = {
 			isa = PBXGroup;
 			children = (
+				637FA3EF1F6C7BD200FDA6B4 /* Views */,
+				637FA3EE1F6C7BC200FDA6B4 /* Models */,
+				637FA3ED1F6C7BB800FDA6B4 /* Controllers */,
 				637FA3EB1F6C744B00FDA6B4 /* GoogleService-Info.plist */,
 				637FA3B91F6C6DF100FDA6B4 /* AppDelegate.swift */,
 				637FA3BB1F6C6DF100FDA6B4 /* ViewController.swift */,
@@ -159,6 +162,27 @@
 				637FA3DB1F6C6DF100FDA6B4 /* Info.plist */,
 			);
 			path = iStudentUITests;
+			sourceTree = "<group>";
+		};
+		637FA3ED1F6C7BB800FDA6B4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		637FA3EE1F6C7BC200FDA6B4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		637FA3EF1F6C7BD200FDA6B4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		C61E93473A797D27D30258AC /* Frameworks */ = {
@@ -384,6 +408,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-iStudent/Pods-iStudent-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/TraceLog/TraceLog.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -391,6 +416,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TraceLog.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
