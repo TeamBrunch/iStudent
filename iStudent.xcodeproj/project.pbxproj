@@ -14,7 +14,7 @@
 		637FA3C41F6C6DF100FDA6B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 637FA3C21F6C6DF100FDA6B4 /* LaunchScreen.storyboard */; };
 		637FA3CF1F6C6DF100FDA6B4 /* iStudentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637FA3CE1F6C6DF100FDA6B4 /* iStudentTests.swift */; };
 		637FA3DA1F6C6DF100FDA6B4 /* iStudentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637FA3D91F6C6DF100FDA6B4 /* iStudentUITests.swift */; };
-		637FA3E81F6C6F4E00FDA6B4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 637FA3E71F6C6F4E00FDA6B4 /* .gitignore */; };
+		637FA3EA1F6C707700FDA6B4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 637FA3E91F6C707700FDA6B4 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,7 @@
 		637FA3D51F6C6DF100FDA6B4 /* iStudentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iStudentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		637FA3D91F6C6DF100FDA6B4 /* iStudentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iStudentUITests.swift; sourceTree = "<group>"; };
 		637FA3DB1F6C6DF100FDA6B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		637FA3E71F6C6F4E00FDA6B4 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = ../../../Downloads/.gitignore; sourceTree = "<group>"; };
+		637FA3E91F6C707700FDA6B4 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 		637FA3AD1F6C6DF100FDA6B4 = {
 			isa = PBXGroup;
 			children = (
-				637FA3E71F6C6F4E00FDA6B4 /* .gitignore */,
+				637FA3E91F6C707700FDA6B4 /* .gitignore */,
 				637FA3B81F6C6DF100FDA6B4 /* iStudent */,
 				637FA3CD1F6C6DF100FDA6B4 /* iStudentTests */,
 				637FA3D81F6C6DF100FDA6B4 /* iStudentUITests */,
@@ -235,7 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				637FA3E81F6C6F4E00FDA6B4 /* .gitignore in Resources */,
+				637FA3EA1F6C707700FDA6B4 /* .gitignore in Resources */,
 				637FA3C41F6C6DF100FDA6B4 /* LaunchScreen.storyboard in Resources */,
 				637FA3C11F6C6DF100FDA6B4 /* Assets.xcassets in Resources */,
 				637FA3BF1F6C6DF100FDA6B4 /* Main.storyboard in Resources */,
