@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import TraceLog
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate
@@ -18,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate
     {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        TraceLog.configure(environment: ["LOG_ALL": "TRACE1"])
         return true
     }
 
