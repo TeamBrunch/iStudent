@@ -9,8 +9,6 @@ target 'iStudent' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
-  pod 'SwiftFormat/CLI'
-  pod "TraceLog"
   target 'iStudentTests' do
     inherit! :search_paths
     # Pods for testing
