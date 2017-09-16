@@ -19,6 +19,7 @@
 		637FA3F11F6C871C00FDA6B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 637FA3F01F6C871C00FDA6B4 /* GoogleService-Info.plist */; };
 		637FA3F71F6C89C600FDA6B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637FA3F61F6C89C600FDA6B4 /* HomeViewController.swift */; };
 		637FA3FA1F6C8AE700FDA6B4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 637FA3F91F6C8AE700FDA6B4 /* Home.storyboard */; };
+		637FA3FE1F6CAA1100FDA6B4 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 637FA3FD1F6CAA1100FDA6B4 /* .gitattributes */; };
 		B98FAC42356BB1AC3959C8EC /* Pods_iStudentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C8B2BC2B9B5ADB6745AF8D /* Pods_iStudentUITests.framework */; };
 		E21922FE05F95352B762AA19 /* Pods_iStudentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFB67900820A06E05E7AC9E /* Pods_iStudentTests.framework */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		637FA3F01F6C871C00FDA6B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		637FA3F61F6C89C600FDA6B4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		637FA3F91F6C8AE700FDA6B4 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		637FA3FD1F6CAA1100FDA6B4 /* .gitattributes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 		913F016BC227C6CF328B68EB /* Pods-iStudentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudentTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iStudentTests/Pods-iStudentTests.release.xcconfig"; sourceTree = "<group>"; };
 		9427BE3EF23337090EE57761 /* Pods-iStudentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudentUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iStudentUITests/Pods-iStudentUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9D74E6A2F7FA633AB41A504E /* Pods_iStudent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iStudent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +102,7 @@
 		637FA3AD1F6C6DF100FDA6B4 = {
 			isa = PBXGroup;
 			children = (
+				637FA3FD1F6CAA1100FDA6B4 /* .gitattributes */,
 				637FA3E91F6C707700FDA6B4 /* .gitignore */,
 				637FA3B81F6C6DF100FDA6B4 /* iStudent */,
 				637FA3CD1F6C6DF100FDA6B4 /* iStudentTests */,
@@ -329,6 +332,7 @@
 				637FA3C41F6C6DF100FDA6B4 /* LaunchScreen.storyboard in Resources */,
 				637FA3F11F6C871C00FDA6B4 /* GoogleService-Info.plist in Resources */,
 				637FA3FA1F6C8AE700FDA6B4 /* Home.storyboard in Resources */,
+				637FA3FE1F6CAA1100FDA6B4 /* .gitattributes in Resources */,
 				637FA3C11F6C6DF100FDA6B4 /* Assets.xcassets in Resources */,
 				637FA3BF1F6C6DF100FDA6B4 /* Main.storyboard in Resources */,
 			);
