@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		08347E76C399C1EE6CD901C3 /* Pods_iStudent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D74E6A2F7FA633AB41A504E /* Pods_iStudent.framework */; };
-		0AB26B8F1F6C885500EE9C02 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AB26B8E1F6C885500EE9C02 /* GoogleService-Info.plist */; };
 		637FA3BA1F6C6DF100FDA6B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637FA3B91F6C6DF100FDA6B4 /* AppDelegate.swift */; };
 		637FA3BC1F6C6DF100FDA6B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637FA3BB1F6C6DF100FDA6B4 /* ViewController.swift */; };
 		637FA3BF1F6C6DF100FDA6B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 637FA3BD1F6C6DF100FDA6B4 /* Main.storyboard */; };
@@ -17,6 +16,10 @@
 		637FA3CF1F6C6DF100FDA6B4 /* iStudentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637FA3CE1F6C6DF100FDA6B4 /* iStudentTests.swift */; };
 		637FA3DA1F6C6DF100FDA6B4 /* iStudentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637FA3D91F6C6DF100FDA6B4 /* iStudentUITests.swift */; };
 		637FA3EA1F6C707700FDA6B4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 637FA3E91F6C707700FDA6B4 /* .gitignore */; };
+		637FA3F11F6C871C00FDA6B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 637FA3F01F6C871C00FDA6B4 /* GoogleService-Info.plist */; };
+		637FA3F71F6C89C600FDA6B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637FA3F61F6C89C600FDA6B4 /* HomeViewController.swift */; };
+		637FA3FA1F6C8AE700FDA6B4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 637FA3F91F6C8AE700FDA6B4 /* Home.storyboard */; };
+		637FA3FE1F6CAA1100FDA6B4 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 637FA3FD1F6CAA1100FDA6B4 /* .gitattributes */; };
 		B98FAC42356BB1AC3959C8EC /* Pods_iStudentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C8B2BC2B9B5ADB6745AF8D /* Pods_iStudentUITests.framework */; };
 		E21922FE05F95352B762AA19 /* Pods_iStudentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFB67900820A06E05E7AC9E /* Pods_iStudentTests.framework */; };
 /* End PBXBuildFile section */
@@ -40,9 +43,10 @@
 
 /* Begin PBXFileReference section */
 		08C8B2BC2B9B5ADB6745AF8D /* Pods_iStudentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iStudentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0AB26B8E1F6C885500EE9C02 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		4A6353676EBDDC4D2C67CB4D /* Pods-iStudent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudent.release.xcconfig"; path = "Pods/Target Support Files/Pods-iStudent/Pods-iStudent.release.xcconfig"; sourceTree = "<group>"; };
-		601C0187BB3975A4FBBB831F /* Pods-iStudentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudentTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iStudentTests/Pods-iStudentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3674A8A979776DC75B5C7FF3 /* Pods-iStudent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iStudent/Pods-iStudent.debug.xcconfig"; sourceTree = "<group>"; };
+		44D70FF497B89086973F714A /* Pods-iStudentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudentTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iStudentTests/Pods-iStudentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		535D79FB12DAE51CBCDBC872 /* Pods-iStudent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudent.release.xcconfig"; path = "Pods/Target Support Files/Pods-iStudent/Pods-iStudent.release.xcconfig"; sourceTree = "<group>"; };
+		62D013AE843155898C4970C5 /* Pods-iStudentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudentUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iStudentUITests/Pods-iStudentUITests.release.xcconfig"; sourceTree = "<group>"; };
 		637FA3B61F6C6DF100FDA6B4 /* iStudent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iStudent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		637FA3B91F6C6DF100FDA6B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		637FA3BB1F6C6DF100FDA6B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,12 +61,14 @@
 		637FA3D91F6C6DF100FDA6B4 /* iStudentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iStudentUITests.swift; sourceTree = "<group>"; };
 		637FA3DB1F6C6DF100FDA6B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		637FA3E91F6C707700FDA6B4 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		8E51CDDDB31FBD93D2F6756C /* Pods-iStudent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iStudent/Pods-iStudent.debug.xcconfig"; sourceTree = "<group>"; };
+		637FA3F01F6C871C00FDA6B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		637FA3F61F6C89C600FDA6B4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		637FA3F91F6C8AE700FDA6B4 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		637FA3FD1F6CAA1100FDA6B4 /* .gitattributes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		913F016BC227C6CF328B68EB /* Pods-iStudentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudentTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iStudentTests/Pods-iStudentTests.release.xcconfig"; sourceTree = "<group>"; };
+		9427BE3EF23337090EE57761 /* Pods-iStudentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudentUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iStudentUITests/Pods-iStudentUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9D74E6A2F7FA633AB41A504E /* Pods_iStudent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iStudent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEFB67900820A06E05E7AC9E /* Pods_iStudentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iStudentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE53B1922B0D29345FE349CC /* Pods-iStudentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudentUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iStudentUITests/Pods-iStudentUITests.release.xcconfig"; sourceTree = "<group>"; };
-		E19E18068642F2037FF7D4BC /* Pods-iStudentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudentUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iStudentUITests/Pods-iStudentUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		F81FCFB96AE4B031B1417B28 /* Pods-iStudentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudentTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iStudentTests/Pods-iStudentTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,29 +99,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18B5DD72B41F77209EC549DB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8E51CDDDB31FBD93D2F6756C /* Pods-iStudent.debug.xcconfig */,
-				4A6353676EBDDC4D2C67CB4D /* Pods-iStudent.release.xcconfig */,
-				601C0187BB3975A4FBBB831F /* Pods-iStudentTests.debug.xcconfig */,
-				F81FCFB96AE4B031B1417B28 /* Pods-iStudentTests.release.xcconfig */,
-				E19E18068642F2037FF7D4BC /* Pods-iStudentUITests.debug.xcconfig */,
-				BE53B1922B0D29345FE349CC /* Pods-iStudentUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		637FA3AD1F6C6DF100FDA6B4 = {
 			isa = PBXGroup;
 			children = (
+				637FA3FD1F6CAA1100FDA6B4 /* .gitattributes */,
 				637FA3E91F6C707700FDA6B4 /* .gitignore */,
 				637FA3B81F6C6DF100FDA6B4 /* iStudent */,
 				637FA3CD1F6C6DF100FDA6B4 /* iStudentTests */,
 				637FA3D81F6C6DF100FDA6B4 /* iStudentUITests */,
 				637FA3B71F6C6DF100FDA6B4 /* Products */,
-				18B5DD72B41F77209EC549DB /* Pods */,
 				C61E93473A797D27D30258AC /* Frameworks */,
+				C981E2B3600994804E264995 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,7 +126,11 @@
 		637FA3B81F6C6DF100FDA6B4 /* iStudent */ = {
 			isa = PBXGroup;
 			children = (
-				0AB26B8E1F6C885500EE9C02 /* GoogleService-Info.plist */,
+				637FA3F81F6C8ACF00FDA6B4 /* Storyboards */,
+				637FA3F01F6C871C00FDA6B4 /* GoogleService-Info.plist */,
+				637FA3EF1F6C7BD200FDA6B4 /* Views */,
+				637FA3EE1F6C7BC200FDA6B4 /* Models */,
+				637FA3ED1F6C7BB800FDA6B4 /* Controllers */,
 				637FA3B91F6C6DF100FDA6B4 /* AppDelegate.swift */,
 				637FA3BB1F6C6DF100FDA6B4 /* ViewController.swift */,
 				637FA3BD1F6C6DF100FDA6B4 /* Main.storyboard */,
@@ -161,6 +159,36 @@
 			path = iStudentUITests;
 			sourceTree = "<group>";
 		};
+		637FA3ED1F6C7BB800FDA6B4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				637FA3F61F6C89C600FDA6B4 /* HomeViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		637FA3EE1F6C7BC200FDA6B4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		637FA3EF1F6C7BD200FDA6B4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		637FA3F81F6C8ACF00FDA6B4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				637FA3F91F6C8AE700FDA6B4 /* Home.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
 		C61E93473A797D27D30258AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +197,19 @@
 				08C8B2BC2B9B5ADB6745AF8D /* Pods_iStudentUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C981E2B3600994804E264995 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3674A8A979776DC75B5C7FF3 /* Pods-iStudent.debug.xcconfig */,
+				535D79FB12DAE51CBCDBC872 /* Pods-iStudent.release.xcconfig */,
+				44D70FF497B89086973F714A /* Pods-iStudentTests.debug.xcconfig */,
+				913F016BC227C6CF328B68EB /* Pods-iStudentTests.release.xcconfig */,
+				9427BE3EF23337090EE57761 /* Pods-iStudentUITests.debug.xcconfig */,
+				62D013AE843155898C4970C5 /* Pods-iStudentUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,7 +225,6 @@
 				637FA3B41F6C6DF100FDA6B4 /* Resources */,
 				8AFC789957005A8211FF4D0D /* [CP] Embed Pods Frameworks */,
 				88415C85DBF9F08168060DE3 /* [CP] Copy Pods Resources */,
-				0AB26B8D1F6C87C000EE9C02 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -290,9 +330,11 @@
 			files = (
 				637FA3EA1F6C707700FDA6B4 /* .gitignore in Resources */,
 				637FA3C41F6C6DF100FDA6B4 /* LaunchScreen.storyboard in Resources */,
+				637FA3F11F6C871C00FDA6B4 /* GoogleService-Info.plist in Resources */,
+				637FA3FA1F6C8AE700FDA6B4 /* Home.storyboard in Resources */,
+				637FA3FE1F6CAA1100FDA6B4 /* .gitattributes in Resources */,
 				637FA3C11F6C6DF100FDA6B4 /* Assets.xcassets in Resources */,
 				637FA3BF1F6C6DF100FDA6B4 /* Main.storyboard in Resources */,
-				0AB26B8F1F6C885500EE9C02 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,19 +355,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0AB26B8D1F6C87C000EE9C02 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\" \"${SRCROOT}/\" --enable blankLinesAtEndOfScope,blankLinesBetweenScopes,braces,consecutiveBlankLines,consecutiveSpaces,hoistPatternLet,indent,linebreakAtEndOfFile,linebreaks,numberFormatting,ranges,redundantBackticks,redundantGet,redundantLet,redundantNilInit,redundantParens,redundantPattern,redundantRawValues,redundantReturn,redundantSelf,redundantVoidReturnType,redundantInit,semicolons,spaceAroundBraces,spaceAroundBrackets,spaceAroundComments,spaceAroundGenerics,spaceAroundOperators,spaceAroundParens,spaceInsideBraces,spaceInsideBrackets,spaceInsideComments,spaceInsideGenerics,spaceInsideParens,specifiers,trailingClosures,trailingCommas,trailingSpace,todos,unusedArguments,void,wrapArguments --disable elseOnSameLine,fileHeader --allman true --binarygrouping 4,8 --commas always --comments indent --decimalgrouping 3,6 --empty void --experimental disabled --exponentcase uppercase --hexgrouping 4,8 --hexliteralcase uppercase --ifdef indent --indent 4 --insertlines enabled --linebreaks lf --octalgrouping 4,8 --patternlet hoist --ranges spaced --removelines enabled --semicolons inline --self remove --stripunusedargs always --trimwhitespace always --wraparguments afterfirst --wrapelements beforefirst\n";
-		};
 		2514CCCFCF72A187D1C7301F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -490,6 +519,7 @@
 			files = (
 				637FA3BC1F6C6DF100FDA6B4 /* ViewController.swift in Sources */,
 				637FA3BA1F6C6DF100FDA6B4 /* AppDelegate.swift in Sources */,
+				637FA3F71F6C89C600FDA6B4 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -641,7 +671,7 @@
 		};
 		637FA3DF1F6C6DF100FDA6B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E51CDDDB31FBD93D2F6756C /* Pods-iStudent.debug.xcconfig */;
+			baseConfigurationReference = 3674A8A979776DC75B5C7FF3 /* Pods-iStudent.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iStudent/Info.plist;
@@ -654,7 +684,7 @@
 		};
 		637FA3E01F6C6DF100FDA6B4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A6353676EBDDC4D2C67CB4D /* Pods-iStudent.release.xcconfig */;
+			baseConfigurationReference = 535D79FB12DAE51CBCDBC872 /* Pods-iStudent.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iStudent/Info.plist;
@@ -667,7 +697,7 @@
 		};
 		637FA3E21F6C6DF100FDA6B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 601C0187BB3975A4FBBB831F /* Pods-iStudentTests.debug.xcconfig */;
+			baseConfigurationReference = 44D70FF497B89086973F714A /* Pods-iStudentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -682,7 +712,7 @@
 		};
 		637FA3E31F6C6DF100FDA6B4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F81FCFB96AE4B031B1417B28 /* Pods-iStudentTests.release.xcconfig */;
+			baseConfigurationReference = 913F016BC227C6CF328B68EB /* Pods-iStudentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -697,7 +727,7 @@
 		};
 		637FA3E51F6C6DF100FDA6B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E19E18068642F2037FF7D4BC /* Pods-iStudentUITests.debug.xcconfig */;
+			baseConfigurationReference = 9427BE3EF23337090EE57761 /* Pods-iStudentUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = iStudentUITests/Info.plist;
@@ -711,7 +741,7 @@
 		};
 		637FA3E61F6C6DF100FDA6B4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE53B1922B0D29345FE349CC /* Pods-iStudentUITests.release.xcconfig */;
+			baseConfigurationReference = 62D013AE843155898C4970C5 /* Pods-iStudentUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = iStudentUITests/Info.plist;
