@@ -103,15 +103,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="launch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wE-A1-1Ql">
-                                <rect key="frame" x="121" y="113" width="132" height="52"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJK-co-Zsx">
+                                <rect key="frame" x="134" y="268.5" width="107" height="30"/>
+                                <state key="normal" title="Join Class Chat"/>
+                                <connections>
+                                    <action selector="joinChatButton:" destination="9EI-VM-W7i" eventType="touchUpInside" id="Yrt-0t-NRr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wu8-db-Lp7">
+                                <rect key="frame" x="148" y="218.5" width="79" height="30"/>
+                                <state key="normal" title="Attendance"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wu8-db-Lp7" firstAttribute="centerY" secondItem="bHu-fc-MlF" secondAttribute="centerY" constant="-100" id="H1y-N7-tcm"/>
+                            <constraint firstItem="rJK-co-Zsx" firstAttribute="centerY" secondItem="bHu-fc-MlF" secondAttribute="centerY" constant="-50" id="I9G-n8-Mw7"/>
+                            <constraint firstItem="Wu8-db-Lp7" firstAttribute="centerX" secondItem="bHu-fc-MlF" secondAttribute="centerX" id="QDF-Ez-Br8"/>
+                            <constraint firstItem="rJK-co-Zsx" firstAttribute="centerX" secondItem="bHu-fc-MlF" secondAttribute="centerX" id="esY-Tp-al6"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="IStudent" id="ifl-rW-Pw5">
                         <barButtonItem key="leftBarButtonItem" title="LogOut" id="wN0-lO-Ru1">
@@ -120,6 +130,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="joinChatButton" destination="rJK-co-Zsx" id="ywH-c0-3qF"/>
+                        <segue destination="NsW-Ms-mej" kind="presentation" identifier="LaunchToBeaconChat" id="Y7X-nP-j8S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uFb-e7-fAf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -165,7 +179,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ueI-Cy-pJH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2078" y="531"/>
+            <point key="canvasLocation" x="2983" y="573"/>
         </scene>
         <!--Sign UpVC-->
         <scene sceneID="4ZP-vF-zsQ">
