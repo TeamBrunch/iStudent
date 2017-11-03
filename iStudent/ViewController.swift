@@ -44,24 +44,10 @@ class ViewController: UIViewController {
     
         if let email = self.userField.text, let password = self.passField.text {
             Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
-                // ...
-                if let error = error {
-                    self.statusMessage.text = error.localizedDescription
-                    return
-                }
-                self.statusMessage.text = "nice you signed in"
-                
-                let storyboard = UIStoryboard(name: "Home", bundle: nil)
-                //in "Main" your  storyboard name
-                
-                let secondViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController")
-                
-                //in place of Login Page your storyboard identifier name
-                
-                self.present(secondViewController, animated: true)
+         
             }
         } else {
-            self.statusMessage.text = "incorrect credentials maybe"
+            print("fail")
         }
         
     }
