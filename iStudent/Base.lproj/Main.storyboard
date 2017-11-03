@@ -91,10 +91,10 @@
             </objects>
             <point key="canvasLocation" x="133.59999999999999" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--LaunchVC-->
         <scene sceneID="LHe-he-eMG">
             <objects>
-                <viewController id="9EI-VM-W7i" sceneMemberID="viewController">
+                <viewController id="9EI-VM-W7i" customClass="LaunchVC" customModule="iStudent" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mwB-vg-P9S"/>
                         <viewControllerLayoutGuide type="bottom" id="dvo-8Q-epQ"/>
@@ -167,6 +167,7 @@
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <action selector="SignUpTapped:" destination="3tq-8Y-34s" eventType="touchUpInside" id="ghz-kf-aFH"/>
+                                    <segue destination="9EI-VM-W7i" kind="presentation" identifier="SignupSegue" id="Uir-fY-c8w"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjA-nf-zfw">
@@ -223,4 +224,7 @@
     <resources>
         <image name="logo" width="400" height="181"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Uir-fY-c8w"/>
+    </inferredMetricsTieBreakers>
 </document>

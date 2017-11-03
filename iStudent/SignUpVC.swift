@@ -55,7 +55,7 @@ class SignUpVC: UIViewController {
                 newUserReference.setValue(["studentId":self.studentIdTextField.text!, "firstName": self.firstNameTextField.text!,"lastName":self.lastNameTextField.text!, "email": self.emailTextField.text!, ])
                 print(" newUserReference description : \(newUserReference.description())")
             }
-            //performSegue(withIdentifier: "signUpToTabbatVC", sender: nil)
+            performSegue(withIdentifier: "SignupSegue", sender: nil)
         } else {
             print("fail to save in firebase")
         }
