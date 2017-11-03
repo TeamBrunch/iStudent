@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,71 +22,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1w2-AH-Npd">
-                                <rect key="frame" x="67" y="138" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mol-o5-VAn">
-                                <rect key="frame" x="166" y="364" width="142" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mol-o5-VAn">
+                                <rect key="frame" x="36" y="335" width="303" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnL-zp-Eu3">
-                                <rect key="frame" x="165" y="512" width="45" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnL-zp-Eu3">
+                                <rect key="frame" x="112.5" y="454" width="150" height="30"/>
+                                <color key="backgroundColor" red="0.27902560763888884" green="0.6409265005016278" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Mmh-LT-ZMJ"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="sign in"/>
                                 <connections>
                                     <action selector="signInBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zzs-c9-pUB"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JVR-Br-Kyh">
-                                <rect key="frame" x="166" y="402" width="142" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JVR-Br-Kyh">
+                                <rect key="frame" x="36" y="387" width="303" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EB4-mq-QQ1">
-                                <rect key="frame" x="68" y="364" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KOf-BP-bu5">
-                                <rect key="frame" x="68" y="402" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="iStudent" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ztl-5f-P4Q">
-                                <rect key="frame" x="115" y="246" width="145" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="se0-5n-Wpn">
-                                <rect key="frame" x="67" y="60" width="241" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01m-p5-YM2">
-                                <rect key="frame" x="162" y="550" width="50" height="30"/>
+                                <rect key="frame" x="0.0" y="577" width="375" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="sign up"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Don't have a account? Sign up Now">
+                                    <color key="titleColor" red="0.0" green="0.35660807290000002" blue="0.71321614580000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="fjP-2g-cmb">
+                                <rect key="frame" x="62" y="100" width="250" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="3Bx-sQ-qAu"/>
+                                    <constraint firstAttribute="width" constant="250" id="Fzx-bR-cyI"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="JVR-Br-Kyh" firstAttribute="top" secondItem="mol-o5-VAn" secondAttribute="bottom" constant="13" id="1HH-7m-FLn"/>
+                            <constraint firstItem="fnL-zp-Eu3" firstAttribute="top" secondItem="JVR-Br-Kyh" secondAttribute="bottom" constant="37" id="9IC-R6-zrZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mol-o5-VAn" secondAttribute="trailing" constant="20" id="JGV-vP-AQ2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JVR-Br-Kyh" secondAttribute="trailing" constant="20" id="Xtk-iX-wbg"/>
+                            <constraint firstItem="fjP-2g-cmb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="bc0-ZD-Ym7"/>
+                            <constraint firstItem="mol-o5-VAn" firstAttribute="top" secondItem="fjP-2g-cmb" secondAttribute="bottom" constant="85" id="cTd-6F-eg4"/>
+                            <constraint firstItem="JVR-Br-Kyh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="dM5-KK-xYo"/>
+                            <constraint firstItem="fnL-zp-Eu3" firstAttribute="top" secondItem="JVR-Br-Kyh" secondAttribute="bottom" constant="37" id="n6f-Zb-nPB"/>
+                            <constraint firstItem="fjP-2g-cmb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nOG-yH-aaW"/>
+                            <constraint firstItem="fnL-zp-Eu3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qjg-u6-tH6"/>
+                            <constraint firstItem="JVR-Br-Kyh" firstAttribute="top" secondItem="mol-o5-VAn" secondAttribute="bottom" constant="22" id="vhP-na-avw"/>
+                            <constraint firstItem="mol-o5-VAn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="zEC-Tm-Nfi"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="passField" destination="JVR-Br-Kyh" id="YCx-0Q-edA"/>
-                        <outlet property="statusMessage" destination="se0-5n-Wpn" id="3x1-Hb-5PO"/>
                         <outlet property="userField" destination="mol-o5-VAn" id="85c-DY-zta"/>
                     </connections>
                 </viewController>
@@ -94,4 +88,7 @@
             <point key="canvasLocation" x="133.59999999999999" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="400" height="181"/>
+    </resources>
 </document>
