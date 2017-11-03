@@ -39,7 +39,7 @@ class SignUpVC: UIViewController {
         let studentId = studentIdTextField.text;
         let password = passwordTextField.text;
         
-        if (email != nil), (firstName != nil), (lastName != nil), (studentId != nil), (password != nil)
+        if ((email != nil) && (firstName != nil) && (lastName != nil) && (studentId != nil) && (password != nil))
         {
             Auth.auth().createUser(withEmail: email!, password: password!)
             { (user: User?, error: Error?) in
@@ -66,6 +66,12 @@ class SignUpVC: UIViewController {
         self.view.endEditing(true)
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "SignupSegue" {
+            let navigationController = segue.destination as! UINavigationController
+            let destination = navigationController.topViewController as! LaunchVC
+            destination.titleName = self.firstNameTextField.text!
+        }
+    }
 
 }

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -227,7 +227,7 @@
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <action selector="SignUpTapped:" destination="3tq-8Y-34s" eventType="touchUpInside" id="ghz-kf-aFH"/>
-                                    <segue destination="yDa-3b-su3" kind="presentation" identifier="SignupSegue" id="Uir-fY-c8w"/>
+                                    <segue destination="yDa-3b-su3" kind="show" identifier="SignupSegue" id="0dz-Lv-Qo6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjA-nf-zfw">
@@ -278,7 +278,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UtR-Uz-dfz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="134" y="975"/>
+            <point key="canvasLocation" x="133.59999999999999" y="974.6626686656673"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zpb-1c-5qj">
@@ -305,6 +305,6 @@
         <image name="logo" width="400" height="181"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Uir-fY-c8w"/>
+        <segue reference="0dz-Lv-Qo6"/>
     </inferredMetricsTieBreakers>
 </document>

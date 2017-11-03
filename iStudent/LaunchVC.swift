@@ -9,10 +9,12 @@
 import UIKit
 
 class LaunchVC: UIViewController {
+    
+    var titleName:String = "";
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Welcome " + self.titleName
         // Do any additional setup after loading the view.
     }
 
