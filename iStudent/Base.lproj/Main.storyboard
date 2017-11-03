@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iStudent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="iStudent" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -37,8 +37,7 @@
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="sign in"/>
                                 <connections>
-                                    <action selector="signInBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zzs-c9-pUB"/>
-                                    <segue destination="9EI-VM-W7i" kind="presentation" id="lhs-HS-629"/>
+                                    <action selector="LoginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GG3-y9-Rri"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JVR-Br-Kyh">
@@ -83,15 +82,16 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="passField" destination="JVR-Br-Kyh" id="YCx-0Q-edA"/>
-                        <outlet property="userField" destination="mol-o5-VAn" id="85c-DY-zta"/>
+                        <outlet property="emailHomeVCTextField" destination="mol-o5-VAn" id="oba-cV-69i"/>
+                        <outlet property="passwordHomeVCTextField" destination="JVR-Br-Kyh" id="TYK-cs-Tkc"/>
+                        <segue destination="yDa-3b-su3" kind="presentation" identifier="loggedInSegue" id="mMI-xK-4In"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="133.59999999999999" y="138.98050974512745"/>
         </scene>
-        <!--LaunchVC-->
+        <!--IStudent-->
         <scene sceneID="LHe-he-eMG">
             <objects>
                 <viewController id="9EI-VM-W7i" customClass="LaunchVC" customModule="iStudent" customModuleProvider="target" sceneMemberID="viewController">
@@ -113,10 +113,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="IStudent" id="ifl-rW-Pw5">
+                        <barButtonItem key="leftBarButtonItem" title="LogOut" id="wN0-lO-Ru1">
+                            <connections>
+                                <action selector="LogOutTapped:" destination="9EI-VM-W7i" id="YEF-9K-PrX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uFb-e7-fAf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1232.8" y="532.98350824587715"/>
+            <point key="canvasLocation" x="2022" y="532"/>
         </scene>
         <!--Sign UpVC-->
         <scene sceneID="4ZP-vF-zsQ">
@@ -167,7 +174,7 @@
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <action selector="SignUpTapped:" destination="3tq-8Y-34s" eventType="touchUpInside" id="ghz-kf-aFH"/>
-                                    <segue destination="9EI-VM-W7i" kind="presentation" identifier="SignupSegue" id="Uir-fY-c8w"/>
+                                    <segue destination="yDa-3b-su3" kind="presentation" identifier="SignupSegue" id="Uir-fY-c8w"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjA-nf-zfw">
@@ -219,6 +226,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UtR-Uz-dfz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="134" y="975"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zpb-1c-5qj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yDa-3b-su3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KiX-uP-VFp">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9EI-VM-W7i" kind="relationship" relationship="rootViewController" id="9Ed-dU-XVF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EXm-m0-uDU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1232" y="532.53373313343332"/>
         </scene>
     </scenes>
     <resources>
