@@ -25,6 +25,9 @@ class LaunchVC: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-  
+    @IBAction func joinChatButton(_ sender: Any) {
+        performSegue(withIdentifier: "LaunchToBeaconChat", sender: self)
+    }
+    
 
 }
