@@ -131,7 +131,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="joinChatButton" destination="rJK-co-Zsx" id="ywH-c0-3qF"/>
                         <segue destination="NsW-Ms-mej" kind="presentation" identifier="LaunchToBeaconChat" id="Y7X-nP-j8S"/>
                     </connections>
                 </viewController>
@@ -157,8 +156,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="g93-8E-6Kr" userLabel="bText">
-                                <rect key="frame" x="67" y="229" width="240" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gmt-Vc-FUQ">
+                                <rect key="frame" x="67" y="248" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -167,14 +167,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="369-hO-1qT" firstAttribute="centerX" secondItem="mMN-4v-4if" secondAttribute="centerX" id="JHt-rP-6Be"/>
-                            <constraint firstItem="g93-8E-6Kr" firstAttribute="centerX" secondItem="mMN-4v-4if" secondAttribute="centerX" id="Kec-JI-BlG"/>
                             <constraint firstItem="369-hO-1qT" firstAttribute="centerY" secondItem="mMN-4v-4if" secondAttribute="centerY" constant="-200" id="bF6-oT-wAS"/>
-                            <constraint firstItem="g93-8E-6Kr" firstAttribute="centerY" secondItem="mMN-4v-4if" secondAttribute="centerY" id="qW9-xE-veM"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="bText" destination="g93-8E-6Kr" id="VKa-GE-PvU"/>
-                        <outlet property="desc" destination="g93-8E-6Kr" id="KK1-Az-H0P"/>
+                        <outlet property="bText" destination="gmt-Vc-FUQ" id="D91-FP-agE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ueI-Cy-pJH" userLabel="First Responder" sceneMemberID="firstResponder"/>
