@@ -11,29 +11,35 @@ import Firebase
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var passwordHomeVCTextField: UITextField!
+    @IBOutlet weak var emailHomeVCTextField: UITextField!
+    
     var handle: AuthStateDidChangeListenerHandle?
     
     @IBOutlet weak var userDisplay: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
     
-    override func viewWillAppear(_ animated : Bool ) {
-        super.viewWillAppear(animated)
-        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
-            self.userDisplay.text = user?.email
-            //self.userDisplay.text = "Signed in, welcome"
+    @IBAction func LoginTapped(_ sender: Any) {
+        if let email = emailHomeVCTextField.text, let password = passwordHomeVCTextField.text
+        {
+            Auth.auth().signIn(withEmail: email, password: password)
+            { _, error in
+                if let firebaseError = error
+                {
+                    print(firebaseError.localizedDescription)
+                    let alert = UIAlertController(title: "IStudent", message: "Login Failed", preferredStyle: UIAlertControllerStyle.alert)
+                    alert.addAction(UIAlertAction(title: "Try Again", style: UIAlertActionStyle.default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                    return
+                }
+                self.performSegue(withIdentifier: "loggedInSegue", sender: nil)
+            }
+          
         }
     }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        Auth.auth().removeStateDidChangeListener(handle!);
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+
 }
+
