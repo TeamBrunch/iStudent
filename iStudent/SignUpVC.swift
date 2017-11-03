@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase;
+import FirebaseDatabase
 
 
 class SignUpVC: UIViewController {
@@ -42,9 +43,21 @@ class SignUpVC: UIViewController {
         {
             Auth.auth().createUser(withEmail: email!, password: password!)
             { (user: User?, error: Error?) in
-                
+                if let firebaseError = error
+                {
+                    print(firebaseError.localizedDescription)
+                    return
+                }
+                let ref = Database.database().reference()
+                let usersReference = ref.child("users")
+                let uid = user?.uid
+                let newUserReference = usersReference.child(uid!)
+                newUserReference.setValue(["studentId":self.studentIdTextField.text!, "firstName": self.firstNameTextField.text!,"lastName":self.lastNameTextField.text!, "email": self.emailTextField.text!, ])
+                print(" newUserReference description : \(newUserReference.description())")
             }
             //performSegue(withIdentifier: "signUpToTabbatVC", sender: nil)
+        } else {
+            print("fail to save in firebase")
         }
     
     }
