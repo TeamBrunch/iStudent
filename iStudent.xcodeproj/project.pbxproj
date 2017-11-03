@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		08347E76C399C1EE6CD901C3 /* Pods_iStudent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D74E6A2F7FA633AB41A504E /* Pods_iStudent.framework */; };
+		2AB1C54B1FACEF5C00D8DCD7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2AB1C54A1FACEF5C00D8DCD7 /* GoogleService-Info.plist */; };
 		637FA3BA1F6C6DF100FDA6B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637FA3B91F6C6DF100FDA6B4 /* AppDelegate.swift */; };
 		637FA3BC1F6C6DF100FDA6B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637FA3BB1F6C6DF100FDA6B4 /* ViewController.swift */; };
 		637FA3BF1F6C6DF100FDA6B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 637FA3BD1F6C6DF100FDA6B4 /* Main.storyboard */; };
@@ -16,7 +17,6 @@
 		637FA3CF1F6C6DF100FDA6B4 /* iStudentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637FA3CE1F6C6DF100FDA6B4 /* iStudentTests.swift */; };
 		637FA3DA1F6C6DF100FDA6B4 /* iStudentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637FA3D91F6C6DF100FDA6B4 /* iStudentUITests.swift */; };
 		637FA3EA1F6C707700FDA6B4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 637FA3E91F6C707700FDA6B4 /* .gitignore */; };
-		637FA3F11F6C871C00FDA6B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 637FA3F01F6C871C00FDA6B4 /* GoogleService-Info.plist */; };
 		637FA3F71F6C89C600FDA6B4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637FA3F61F6C89C600FDA6B4 /* HomeViewController.swift */; };
 		637FA3FA1F6C8AE700FDA6B4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 637FA3F91F6C8AE700FDA6B4 /* Home.storyboard */; };
 		637FA3FE1F6CAA1100FDA6B4 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = 637FA3FD1F6CAA1100FDA6B4 /* .gitattributes */; };
@@ -43,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		08C8B2BC2B9B5ADB6745AF8D /* Pods_iStudentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iStudentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AB1C54A1FACEF5C00D8DCD7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3674A8A979776DC75B5C7FF3 /* Pods-iStudent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iStudent/Pods-iStudent.debug.xcconfig"; sourceTree = "<group>"; };
 		44D70FF497B89086973F714A /* Pods-iStudentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudentTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iStudentTests/Pods-iStudentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		535D79FB12DAE51CBCDBC872 /* Pods-iStudent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStudent.release.xcconfig"; path = "Pods/Target Support Files/Pods-iStudent/Pods-iStudent.release.xcconfig"; sourceTree = "<group>"; };
@@ -61,7 +62,6 @@
 		637FA3D91F6C6DF100FDA6B4 /* iStudentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iStudentUITests.swift; sourceTree = "<group>"; };
 		637FA3DB1F6C6DF100FDA6B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		637FA3E91F6C707700FDA6B4 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		637FA3F01F6C871C00FDA6B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		637FA3F61F6C89C600FDA6B4 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		637FA3F91F6C8AE700FDA6B4 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		637FA3FD1F6CAA1100FDA6B4 /* .gitattributes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
@@ -126,8 +126,8 @@
 		637FA3B81F6C6DF100FDA6B4 /* iStudent */ = {
 			isa = PBXGroup;
 			children = (
+				2AB1C54A1FACEF5C00D8DCD7 /* GoogleService-Info.plist */,
 				637FA3F81F6C8ACF00FDA6B4 /* Storyboards */,
-				637FA3F01F6C871C00FDA6B4 /* GoogleService-Info.plist */,
 				637FA3EF1F6C7BD200FDA6B4 /* Views */,
 				637FA3EE1F6C7BC200FDA6B4 /* Models */,
 				637FA3ED1F6C7BB800FDA6B4 /* Controllers */,
@@ -330,11 +330,11 @@
 			files = (
 				637FA3EA1F6C707700FDA6B4 /* .gitignore in Resources */,
 				637FA3C41F6C6DF100FDA6B4 /* LaunchScreen.storyboard in Resources */,
-				637FA3F11F6C871C00FDA6B4 /* GoogleService-Info.plist in Resources */,
 				637FA3FA1F6C8AE700FDA6B4 /* Home.storyboard in Resources */,
 				637FA3FE1F6CAA1100FDA6B4 /* .gitattributes in Resources */,
 				637FA3C11F6C6DF100FDA6B4 /* Assets.xcassets in Resources */,
 				637FA3BF1F6C6DF100FDA6B4 /* Main.storyboard in Resources */,
+				2AB1C54B1FACEF5C00D8DCD7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
