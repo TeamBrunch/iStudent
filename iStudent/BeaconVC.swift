@@ -11,7 +11,6 @@ import CoreLocation
 
 class BeaconVC: UIViewController, CLLocationManagerDelegate {
     var locationManager: CLLocationManager!
-    var checks: Int = 1
     @IBOutlet weak var bText: UITextView!
     
     
@@ -38,14 +37,14 @@ class BeaconVC: UIViewController, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
         var desc: String = ""
         if beacons.count > 0 {
-            print(beacons)
             for beacon in beacons{
                 desc +=  "UUID: \(beacon.proximityUUID). \nmajor: \(beacon.major)\nminor: \(beacon.minor) \nrssi: \(beacon.rssi) \naccuracy: \(beacon.accuracy) \n\n"
             }
         } else {
             desc += "Beacon not found"
         }
-        self.bText.text = desc
+        print(beacons)
+        self.bText.text = "Beacon: " + desc
     }
     
     func updateDistance(_ distance: CLProximity) {
