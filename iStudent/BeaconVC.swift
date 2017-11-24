@@ -13,7 +13,6 @@ class BeaconVC: UIViewController, CLLocationManagerDelegate {
     var locationManager: CLLocationManager!
     @IBOutlet weak var bText: UITextView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,6 +38,8 @@ class BeaconVC: UIViewController, CLLocationManagerDelegate {
         if beacons.count > 0 {
             for beacon in beacons{
                 desc +=  "UUID: \(beacon.proximityUUID). \nmajor: \(beacon.major)\nminor: \(beacon.minor) \nrssi: \(beacon.rssi) \naccuracy: \(beacon.accuracy) \n\n"
+                //check istance
+                //assign beacon if valid distance
             }
         } else {
             desc += "Beacon not found"
@@ -74,4 +75,5 @@ class BeaconVC: UIViewController, CLLocationManagerDelegate {
         //locationManager.startMonitoring(for: beaconRegion)
         locationManager.startRangingBeacons(in: beaconRegion)
     }
+    
 }

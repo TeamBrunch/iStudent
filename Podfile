@@ -10,7 +10,7 @@ target 'iStudent' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'SwiftFormat/CLI'
-  
+  pod 'JSQMessagesViewController' 
   pod "TraceLog"
   
   target 'iStudentTests' do
