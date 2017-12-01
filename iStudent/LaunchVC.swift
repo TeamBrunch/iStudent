@@ -16,12 +16,10 @@ class LaunchVC: UIViewController {
     private lazy var channelRef: DatabaseReference = Database.database().reference().child("channels")
     private var channelRefHandle: DatabaseHandle?
     private var channels = [[String:String]]()
-    @IBOutlet weak var uuidLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        uuidLabel.text = uuid
         nameLabel.text = name
         self.senderDisplayName = (Auth.auth().currentUser?.email)!
         //query
@@ -51,6 +49,7 @@ class LaunchVC: UIViewController {
         let channel = self.channels[0]
         chatVc.senderDisplayName = self.senderDisplayName
         chatVc.channel = channel
+        chatVc.title = channel["name"]
         chatVc.channelRef = self.channelRef.child(channel["id"]!)
     }
     

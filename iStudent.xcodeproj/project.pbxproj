@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		08347E76C399C1EE6CD901C3 /* Pods_iStudent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D74E6A2F7FA633AB41A504E /* Pods_iStudent.framework */; };
-		0A56F5431FAD06BB00A912C1 /* BeaconVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A56F5421FAD06BB00A912C1 /* BeaconVC.swift */; };
 		2AB1C54B1FACEF5C00D8DCD7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2AB1C54A1FACEF5C00D8DCD7 /* GoogleService-Info.plist */; };
 		2AB1C54F1FACFD8F00D8DCD7 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB1C54E1FACFD8F00D8DCD7 /* SignUpVC.swift */; };
 		2AB1C5511FAD044B00D8DCD7 /* LaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB1C5501FAD044B00D8DCD7 /* LaunchVC.swift */; };
@@ -49,7 +48,6 @@
 
 /* Begin PBXFileReference section */
 		08C8B2BC2B9B5ADB6745AF8D /* Pods_iStudentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iStudentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A56F5421FAD06BB00A912C1 /* BeaconVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconVC.swift; sourceTree = "<group>"; };
 		2AB1C54A1FACEF5C00D8DCD7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2AB1C54E1FACFD8F00D8DCD7 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		2AB1C5501FAD044B00D8DCD7 /* LaunchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchVC.swift; sourceTree = "<group>"; };
@@ -176,7 +174,6 @@
 			children = (
 				637FA3F61F6C89C600FDA6B4 /* HomeViewController.swift */,
 				2AB1C54E1FACFD8F00D8DCD7 /* SignUpVC.swift */,
-				0A56F5421FAD06BB00A912C1 /* BeaconVC.swift */,
 				6362E83E1FBF916C00E4221F /* BeaconTableVC.swift */,
 				63E4895E1FC8D37500974F6E /* ChatViewController.swift */,
 			);
@@ -545,7 +542,6 @@
 				637FA3BC1F6C6DF100FDA6B4 /* ViewController.swift in Sources */,
 				637FA3BA1F6C6DF100FDA6B4 /* AppDelegate.swift in Sources */,
 				2AB1C5511FAD044B00D8DCD7 /* LaunchVC.swift in Sources */,
-				0A56F5431FAD06BB00A912C1 /* BeaconVC.swift in Sources */,
 				637FA3F71F6C89C600FDA6B4 /* HomeViewController.swift in Sources */,
 				63E4895F1FC8D37500974F6E /* ChatViewController.swift in Sources */,
 				6362E83F1FBF916C00E4221F /* BeaconTableVC.swift in Sources */,

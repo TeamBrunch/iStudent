@@ -61,10 +61,12 @@ class BeaconTableVC: UITableViewController, CLLocationManagerDelegate {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let uuid = Array(beaconCollection)[indexPath.row].key
         let name = firebaseBeaconCollection[uuid]
-        let launchVC = self.storyboard?.instantiateViewController(withIdentifier: "LaunchVC") as! LaunchVC
-        launchVC.uuid = uuid
-        launchVC.name = name!
-        self.navigationController?.pushViewController(launchVC, animated: true)
+        if(name != "default") {
+            let launchVC = self.storyboard?.instantiateViewController(withIdentifier: "LaunchVC") as! LaunchVC
+            launchVC.uuid = uuid
+            launchVC.name = name!
+            self.navigationController?.pushViewController(launchVC, animated: true)
+        }
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
@@ -96,7 +98,6 @@ class BeaconTableVC: UITableViewController, CLLocationManagerDelegate {
                 }
             }
         }
-        
     }
     
     func validateDistance(_ distance: CLProximity) -> Bool {
