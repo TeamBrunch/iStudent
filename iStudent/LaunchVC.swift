@@ -38,8 +38,19 @@ class LaunchVC: UIViewController {
     }
     
     @IBAction func joinChatButton(_ sender: Any) {
-        let channel = self.channels[0]; //get the first
-        performSegue(withIdentifier: "LaunchToBeaconChat", sender: channel)
+        if Reachability.isConnectedToNetwork(){
+            let channel = self.channels[0]; //get the first
+            performSegue(withIdentifier: "LaunchToBeaconChat", sender: channel)
+        } else {
+            // Alert the user that there is no internet connection
+            let alert = UIAlertController(title: "No Internet Connection!", message: "App may not function properly", preferredStyle: UIAlertControllerStyle.alert)
+            
+            // Add okay action to alert, to return back to the app
+            alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil))
+            
+            // Present the alert to the user
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -51,6 +62,21 @@ class LaunchVC: UIViewController {
         chatVc.channel = channel
         chatVc.title = channel["name"]
         chatVc.channelRef = self.channelRef.child(channel["id"]!)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if Reachability.isConnectedToNetwork(){
+            
+        } else {
+            // Alert the user that there is no internet connection
+            let alert = UIAlertController(title: "No Internet Connection!", message: "App may not function properly", preferredStyle: UIAlertControllerStyle.alert)
+            
+            // Add okay action to alert, to return back to the app
+            alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil))
+            
+            // Present the alert to the user
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
     private func observeChannels() {
