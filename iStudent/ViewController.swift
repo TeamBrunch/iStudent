@@ -54,18 +54,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    @IBAction func signInBtn(_ sender: UIButton) {
-    
-        if let email = self.userField.text, let password = self.passField.text {
-            Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
-         
-            }
-        } else {
-            print("fail")
-        }
-        
-    }
     
 }
 
