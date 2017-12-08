@@ -307,7 +307,7 @@
 				TargetAttributes = {
 					637FA3B51F6C6DF100FDA6B4 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 8QLX6RCHGP;
+						DevelopmentTeam = N6RP3H788Z;
 						ProvisioningStyle = Automatic;
 					};
 					637FA3C91F6C6DF100FDA6B4 = {
@@ -715,11 +715,11 @@
 			baseConfigurationReference = 3674A8A979776DC75B5C7FF3 /* Pods-iStudent.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8QLX6RCHGP;
+				DEVELOPMENT_TEAM = N6RP3H788Z;
 				INFOPLIST_FILE = iStudent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TeamBrunch.iStudent;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.bcit.comp4977.iStudent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -730,11 +730,11 @@
 			baseConfigurationReference = 535D79FB12DAE51CBCDBC872 /* Pods-iStudent.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 8QLX6RCHGP;
+				DEVELOPMENT_TEAM = N6RP3H788Z;
 				INFOPLIST_FILE = iStudent/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = TeamBrunch.iStudent;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.bcit.comp4977.iStudent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
