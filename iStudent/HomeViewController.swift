@@ -37,22 +37,29 @@ class HomeViewController: UIViewController {
         }
     }
     
+    func genericAlert(alertTitle:String, alertMessage:String) {
+        let alertController = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
+        let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alertController.addAction(defaultAction)
+        present(alertController, animated: true, completion: nil)
+    }
+    
     @IBAction func LoginTapped(_ sender: Any) {
-        if let email = emailHomeVCTextField.text, let password = passwordHomeVCTextField.text
-        {
-            Auth.auth().signIn(withEmail: email, password: password)
-            { _, error in
-                if let firebaseError = error
-                {
-                    print(firebaseError.localizedDescription)
-                    let alert = UIAlertController(title: "IStudent", message: "Login Failed", preferredStyle: UIAlertControllerStyle.alert)
-                    alert.addAction(UIAlertAction(title: "Try Again", style: UIAlertActionStyle.default, handler: nil))
-                    self.present(alert, animated: true, completion: nil)
-                    return
+        let userEmail = self.emailHomeVCTextField.text
+        let userPassword = self.passwordHomeVCTextField.text
+        
+        if userEmail == "" || userPassword == "" {
+            self.genericAlert(alertTitle: "Required Fields", alertMessage: "Please enter an email and a password.")
+        } else {
+            Auth.auth().signIn(withEmail: userEmail!, password: userPassword!) { (user, error) in
+                if error == nil {
+                    // sign in sucess
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
+                    self.present(vc!, animated: true, completion: nil)
+                } else {
+                    self.genericAlert(alertTitle: "Error", alertMessage: (error?.localizedDescription)!)
                 }
-                self.performSegue(withIdentifier: "loggedInSegue", sender: nil)
             }
-          
         }
     }
     

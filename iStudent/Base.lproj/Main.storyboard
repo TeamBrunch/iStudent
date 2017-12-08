@@ -70,7 +70,7 @@
                                     <action selector="LoginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GG3-y9-Rri"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mol-o5-VAn">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mol-o5-VAn">
                                 <rect key="frame" x="35" y="339" width="303" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="lJE-nF-wog"/>
@@ -103,7 +103,6 @@
                     <connections>
                         <outlet property="emailHomeVCTextField" destination="mol-o5-VAn" id="oba-cV-69i"/>
                         <outlet property="passwordHomeVCTextField" destination="JVR-Br-Kyh" id="TYK-cs-Tkc"/>
-                        <segue destination="yDa-3b-su3" kind="presentation" identifier="loggedInSegue" id="mMI-xK-4In"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
