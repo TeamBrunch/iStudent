@@ -301,7 +301,6 @@
                                 </state>
                                 <connections>
                                     <action selector="SignUpTapped:" destination="3tq-8Y-34s" eventType="touchUpInside" id="ghz-kf-aFH"/>
-                                    <segue destination="yDa-3b-su3" kind="presentation" identifier="SignupSegue" id="Uir-fY-c8w"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjA-nf-zfw">
@@ -356,7 +355,7 @@
         <!--Navigation Controller-->
         <scene sceneID="zpb-1c-5qj">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yDa-3b-su3" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Home" automaticallyAdjustsScrollViewInsets="NO" id="yDa-3b-su3" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KiX-uP-VFp">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -377,7 +376,4 @@
     <resources>
         <image name="bcitlogo" width="512" height="512"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="mMI-xK-4In"/>
-    </inferredMetricsTieBreakers>
 </document>
