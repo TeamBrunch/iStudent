@@ -7,7 +7,8 @@
 //
 
 import UIKit
-import Firebase;
+import Firebase
+import FirebaseAuth
 import FirebaseDatabase
 
 
@@ -19,6 +20,7 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var studentIdTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    var ref = Database.database().reference()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,41 +48,55 @@ class SignUpVC: UIViewController {
         }
     }
     
+    func genericAlert(alertTitle:String, alertMessage:String) {
+        let alertController = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
+        let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alertController.addAction(defaultAction)
+        present(alertController, animated: true, completion: nil)
+    }
+    
     @IBAction func SignUpTapped(_ sender: Any) {
-        
         let email = emailTextField.text;
         let firstName = firstNameTextField.text;
         let lastName = lastNameTextField.text;
         let studentId = studentIdTextField.text;
         let password = passwordTextField.text;
         
-        if (email != nil), (firstName != nil), (lastName != nil), (studentId != nil), (password != nil)
-        {
-            Auth.auth().createUser(withEmail: email!, password: password!)
-            { (user: User?, error: Error?) in
-                if let firebaseError = error
-                {
-                    print(firebaseError.localizedDescription)
-                    return
-                }
-                let ref = Database.database().reference()
-                let usersReference = ref.child("users")
-                let uid = user?.uid
-                let newUserReference = usersReference.child(uid!)
-                newUserReference.setValue(["studentId":self.studentIdTextField.text!, "firstName": self.firstNameTextField.text!,"lastName":self.lastNameTextField.text!, "email": self.emailTextField.text!, ])
-                print(" newUserReference description : \(newUserReference.description())")
-            }
-            performSegue(withIdentifier: "SignupSegue", sender: nil)
+        if email == "" {
+            self.genericAlert(alertTitle: "Required Field", alertMessage: "Please enter an email.")
+        } else if firstName == "" {
+            self.genericAlert(alertTitle: "Required Field", alertMessage: "Please enter a first name.")
+        } else if lastName == "" {
+            self.genericAlert(alertTitle: "Required Field", alertMessage: "Please enter a last name.")
+        } else  if studentId == "" {
+            self.genericAlert(alertTitle: "Required Field", alertMessage: "Please enter a Student ID.")
+        } else if password == "" {
+            self.genericAlert(alertTitle: "Required Field", alertMessage: "Please enter a password.")
         } else {
-            print("fail to save in firebase")
+            Auth.auth().createUser(withEmail: email!, password: password!) { (user, error) in
+                if error == nil {
+                    let usersReference = self.ref.child("users")
+                    let uid = user?.uid
+                    let newUserReference = usersReference.child(uid!)
+                    newUserReference.setValue(
+                        [
+                            "studentId" :self.studentIdTextField.text!,
+                            "firstName" : self.firstNameTextField.text!,
+                            "lastName"  :self.lastNameTextField.text!,
+                            "email"     : self.emailTextField.text!
+                        ])
+                    print(" newUserReference description : \(newUserReference.description())")
+                    // self.performSegue(withIdentifier: "SignupSegue", sender: nil)
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
+                    self.present(vc!, animated: true, completion: nil)
+                } else {
+                    self.genericAlert(alertTitle: "Error", alertMessage: (error?.localizedDescription)!)
+                }
+            }
         }
-    
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
-    
-    
-
 }
