@@ -44,17 +44,23 @@ class BeaconTableVC: UITableViewController, CLLocationManagerDelegate {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return beaconCollection.count
+        return beaconCollection.count == 0 ? 1 : beaconCollection.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> BeaconTableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseidentifier, for: indexPath) as! BeaconTableViewCell
         // Configure the cell...
-        let uuid = Array(beaconCollection)[indexPath.row].key
-        let name = firebaseBeaconCollection[uuid]
-        cell.name.text = name!
-        cell.distance.text = beaconCollection[uuid]!.proximity.rawValue.description
+        if(beaconCollection.count != 0) {
+            let uuid = Array(beaconCollection)[indexPath.row].key
+            let name = firebaseBeaconCollection[uuid]
+            cell.name.text = name!
+            cell.distance.text = beaconCollection[uuid]!.proximity.rawValue.description
+        } else {
+            cell.name.text = "No beacon in range"
+            cell.distance.text = "...searching"
+        }
+        
         return cell
     }
     
